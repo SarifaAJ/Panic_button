@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:paddingTop="@dimen/_16ssp"
+    android:paddingStart="@dimen/_16ssp"
+    android:paddingEnd="@dimen/_16ssp"
+    tools:context=".ui.fragment.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/img_profile"
+                android:layout_width="@dimen/_39ssp"
+                android:layout_height="@dimen/_39ssp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                app:shapeAppearance="@style/RoundedImageView"
+                android:src="@drawable/vongola" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView"
+                    style="@style/TVBlackMedium3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/welcome" />
+
+                <TextView
+                    android:id="@+id/welcome_name"
+                    style="@style/TVBlackBold4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/welcome_name" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8ssp">
+
+            <TextView
+                android:id="@+id/tv_panic_button"
+                style="@style/TVBlackBold2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/panic_button" />
+
+            <ImageButton
+                android:id="@+id/toggleButton"
+                android:layout_width="@dimen/_36ssp"
+                android:layout_height="@dimen/_36ssp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:background="@android:color/transparent"
+                android:src="@drawable/icon_list_view" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_170sdp"
+            android:layout_marginTop="@dimen/_4ssp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_panicButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+        </ScrollView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8ssp">
+
+            <TextView
+                android:id="@+id/tv_informasi"
+                style="@style/TVBlackBold2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/informasi" />
+
+            <TextView
+                android:id="@+id/btn_lihat_semua"
+                style="@style/TVBlackMedium4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_6ssp"
+                android:layout_alignParentEnd="true"
+                android:clickable="true"
+                android:text="@string/lihat_semua" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_4ssp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_informasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </ScrollView>
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="@dimen/_8ssp"
+        android:layout_marginBottom="@dimen/_16ssp"
+        android:backgroundTint="@color/red"
+        android:clickable="true"
+        android:src="@drawable/icon_add" />
+
+</RelativeLayout>

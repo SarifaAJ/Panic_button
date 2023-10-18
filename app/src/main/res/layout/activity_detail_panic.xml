@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.homefragment.DetailPanicActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:elevation="@dimen/_12ssp">
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="@dimen/_30ssp"
+            android:layout_height="@dimen/_30ssp"
+            android:layout_margin="@dimen/_16ssp"
+            android:padding="@dimen/_4ssp"
+            android:background="@drawable/btn_white"
+            android:backgroundTint="@color/G30"
+            android:src="@drawable/icon_arrow_back"
+            android:adjustViewBounds="true"/>
+
+        <TextView
+            android:id="@+id/informasi"
+            style="@style/TVBlackBold2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16ssp"
+            android:gravity="center"
+            android:text="@string/detail_panic" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/relativeLayout"
+        android:layout_above="@id/btn_bantuan">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_16ssp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/map_img"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_150sdp"
+                android:scaleType="centerCrop"
+                app:shapeAppearance="@style/RectangleImageView"
+                android:layout_marginBottom="@dimen/_8ssp"
+                android:src="@drawable/map" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginEnd="@dimen/_16ssp">
+
+                    <ImageView
+                        android:id="@+id/status_circle"
+                        android:layout_width="@dimen/_12ssp"
+                        android:layout_height="@dimen/_12ssp"
+                        android:src="@drawable/icon_circle_dgrey" />
+
+                    <TextView
+                        android:id="@+id/status"
+                        style="@style/TVBlackMedium5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_4ssp"
+                        android:text="@string/status" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/time_img"
+                        android:layout_width="@dimen/_12ssp"
+                        android:layout_height="@dimen/_12ssp"
+                        android:src="@drawable/icon_time" />
+
+                    <TextView
+                        android:id="@+id/terakhir_diperbarui"
+                        style="@style/TVG90Medium3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_4ssp"
+                        android:text="@string/terakhir_diperbarui" />
+
+                    <TextView
+                        android:id="@+id/time"
+                        style="@style/TVG90Medium3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_4ssp"
+                        android:text="@string/hour" />
+                </TableRow>
+            </LinearLayout>
+
+            <TextView
+                style="@style/TVG90Medium2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16ssp"
+                android:text="@string/nama_panic" />
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_4ssp">
+
+                <TextView
+                    android:id="@+id/panic_name"
+                    style="@style/TVBlackMedium3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nama_panic" />
+
+                <ImageView
+                    android:id="@+id/edit"
+                    android:layout_width="@dimen/_12ssp"
+                    android:layout_height="@dimen/_12ssp"
+                    android:layout_marginStart="@dimen/_16ssp"
+                    android:src="@drawable/icon_edit" />
+            </TableRow>
+
+            <TextView
+                style="@style/TVG90Medium2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16ssp"
+                android:text="@string/alamat" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_4ssp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="@dimen/_8ssp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/TVG60Medium1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_4ssp"
+                        android:text="@string/kecamatan" />
+
+                    <TextView
+                        android:id="@+id/kecamatan"
+                        style="@style/TVBlackMedium3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/kecamatan" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="@dimen/_8ssp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/TVG60Medium1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_4ssp"
+                        android:text="@string/kelurahan" />
+
+                    <TextView
+                        android:id="@+id/kelurahan"
+                        style="@style/TVBlackMedium3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/kelurahan" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/TVG60Medium1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4ssp"
+                android:text="@string/nama_jalan" />
+
+            <TextView
+                android:id="@+id/nama_jalan"
+                style="@style/TVBlackMedium3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nama_jalan" />
+
+            <TextView
+                style="@style/TVG90Medium2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16ssp"
+                android:text="@string/informasi_panic" />
+
+            <TextView
+                style="@style/TVG60Medium1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4ssp"
+                android:text="@string/waktu_pemasangan" />
+
+            <TextView
+                style="@style/TVBlackMedium3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/waktu_pemasangan" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_4ssp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="@dimen/_8ssp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/TVG60Medium1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_4ssp"
+                        android:text="@string/waktu_maintenance_terakhir" />
+
+                    <TextView
+                        android:id="@+id/maintenance_terakhir"
+                        style="@style/TVBlackMedium3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/waktu_maintenance_terakhir" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="@dimen/_8ssp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/TVG60Medium1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_4ssp"
+                        android:text="@string/waktu_maintenance_berikutnya" />
+
+                    <TextView
+                        android:id="@+id/maintenance_berikutnya"
+                        style="@style/TVBlackMedium3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/waktu_maintenance_berikutnya" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/TVG60Medium1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4ssp"
+                android:text="@string/paket_panic" />
+
+            <TextView
+                android:id="@+id/paket_panic"
+                style="@style/TVBlackMedium3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/paket_panic" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/btn_bantuan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/_16ssp"
+        android:layout_marginTop="@dimen/_16ssp"
+        android:layout_marginEnd="@dimen/_16ssp"
+        android:layout_marginBottom="@dimen/_16ssp"
+        android:elevation="@dimen/_2ssp"
+        android:background="@drawable/btn_gradient"
+        android:backgroundTint="@color/red"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/_8ssp">
+
+        <ImageView
+            android:layout_width="@dimen/_24ssp"
+            android:layout_height="@dimen/_24ssp"
+            android:layout_marginEnd="@dimen/_8ssp"
+            android:src="@drawable/icon_chat" />
+
+        <TextView
+            style="@style/TVWhiteMedium2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bantuan" />
+    </LinearLayout>
+</RelativeLayout>

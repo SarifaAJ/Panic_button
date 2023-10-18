@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/_16ssp"
+    tools:context=".ui.profilefragment.ProfileOTPActivity">
+
+    <ImageView
+        android:layout_width="@dimen/_194sdp"
+        android:layout_height="@dimen/_194sdp"
+        android:adjustViewBounds="true"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/otp_1" />
+
+    <TextView
+        style="@style/TVBlackBold3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16ssp"
+        android:text="@string/otp"/>
+
+    <TextView
+        style="@style/TVG90Medium1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:text="@string/otp_konfirmasi" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_16ssp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edt_otp_1"
+            style="@style/TVG90Medium1"
+            android:background="@drawable/outline_rectangle"
+            android:layout_width="@dimen/_34ssp"
+            android:layout_height="@dimen/_34ssp"
+            android:layout_marginStart="@dimen/_2ssp"
+            android:layout_marginEnd="@dimen/_2ssp"
+            android:gravity="center"
+            android:maxLines="1"
+            android:maxLength="1"
+            android:ems="10"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/edt_otp_2"
+            style="@style/TVG90Medium1"
+            android:background="@drawable/outline_rectangle"
+            android:layout_width="@dimen/_34ssp"
+            android:layout_height="@dimen/_34ssp"
+            android:layout_marginStart="@dimen/_2ssp"
+            android:layout_marginEnd="@dimen/_2ssp"
+            android:gravity="center"
+            android:maxLines="1"
+            android:maxLength="1"
+            android:ems="10"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/edt_otp_3"
+            style="@style/TVG90Medium1"
+            android:background="@drawable/outline_rectangle"
+            android:layout_width="@dimen/_34ssp"
+            android:layout_height="@dimen/_34ssp"
+            android:layout_marginStart="@dimen/_2ssp"
+            android:layout_marginEnd="@dimen/_2ssp"
+            android:gravity="center"
+            android:maxLines="1"
+            android:maxLength="1"
+            android:ems="10"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/edt_otp_4"
+            style="@style/TVG90Medium1"
+            android:background="@drawable/outline_rectangle"
+            android:layout_width="@dimen/_34ssp"
+            android:layout_height="@dimen/_34ssp"
+            android:layout_marginStart="@dimen/_2ssp"
+            android:layout_marginEnd="@dimen/_2ssp"
+            android:gravity="center"
+            android:maxLines="1"
+            android:maxLength="1"
+            android:ems="10"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/edt_otp_5"
+            style="@style/TVG90Medium1"
+            android:background="@drawable/outline_rectangle"
+            android:layout_width="@dimen/_34ssp"
+            android:layout_height="@dimen/_34ssp"
+            android:layout_marginStart="@dimen/_2ssp"
+            android:layout_marginEnd="@dimen/_2ssp"
+            android:gravity="center"
+            android:maxLines="1"
+            android:maxLength="1"
+            android:ems="10"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/edt_otp_6"
+            style="@style/TVG90Medium1"
+            android:background="@drawable/outline_rectangle"
+            android:layout_width="@dimen/_34ssp"
+            android:layout_height="@dimen/_34ssp"
+            android:layout_marginStart="@dimen/_2ssp"
+            android:layout_marginEnd="@dimen/_2ssp"
+            android:gravity="center"
+            android:maxLines="1"
+            android:maxLength="1"
+            android:ems="10"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btn_kirim"
+        style="@style/TVWhiteMedium3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16ssp"
+        android:elevation="@dimen/_2ssp"
+        android:background="@drawable/rectangle2"
+        android:backgroundTint="@color/red"
+        android:padding="@dimen/_8ssp"
+        android:gravity="center"
+        android:text="@string/otp_btn" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16ssp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/TVG60Medium1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_4ssp"
+            android:text="@string/otp_pertanyaan" />
+
+        <TextView
+            android:id="@+id/btn_waktu"
+            style="@style/TVBlueMedium1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/otp_pertanyaan2" />
+    </LinearLayout>
+</LinearLayout>

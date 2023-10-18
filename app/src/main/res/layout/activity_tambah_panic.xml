@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.homefragment.TambahPanicActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:elevation="@dimen/_12ssp">
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="@dimen/_30ssp"
+            android:layout_height="@dimen/_30ssp"
+            android:layout_margin="@dimen/_16ssp"
+            android:padding="@dimen/_4ssp"
+            android:background="@drawable/btn_white"
+            android:backgroundTint="@color/G30"
+            android:src="@drawable/icon_arrow_back"
+            android:adjustViewBounds="true"/>
+
+        <TextView
+            style="@style/TVBlackBold2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16ssp"
+            android:gravity="center"
+            android:text="@string/tambah_panic" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/relativeLayout"
+        android:layout_above="@id/btn_tambah"
+        android:orientation="vertical"
+        android:padding="@dimen/_16ssp">
+
+        <TextView
+            style="@style/TVBlackMedium3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nama_panic" />
+
+        <EditText
+            android:id="@+id/edt_nama_panic"
+            style="@style/TVG90Medium1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4ssp"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="@string/tambah_panic"
+            android:textColorHint="@color/G60"/>
+
+        <TextView
+            style="@style/TVBlackMedium3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16ssp"
+            android:text="@string/alamat" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4ssp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="@dimen/_4ssp"
+                style="@style/CustomTextInputLayout">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_tulis_kec"
+                    style="@style/TVG90Medium1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/_16ssp"
+                    android:paddingEnd="@dimen/_16ssp"
+                    android:paddingTop="@dimen/_8ssp"
+                    android:paddingBottom="@dimen/_8ssp"
+                    android:hint="@string/pilih_kec"
+                    android:textColorHint="@color/G60"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="@dimen/_4ssp"
+                style="@style/CustomTextInputLayout">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_tulis_kel"
+                    style="@style/TVG90Medium1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/_16ssp"
+                    android:paddingEnd="@dimen/_16ssp"
+                    android:paddingTop="@dimen/_8ssp"
+                    android:paddingBottom="@dimen/_8ssp"
+                    android:hint="@string/pilih_kel"
+                    android:textColorHint="@color/G60"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edt_tulis_alamat"
+            style="@style/TVG90Medium1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4ssp"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:hint="@string/tulis_alamat"
+            android:textColorHint="@color/G60"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/map_img"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_150sdp"
+            android:scaleType="centerCrop"
+            app:shapeAppearance="@style/Rectangle2ImageView"
+            android:layout_marginTop="@dimen/_32ssp"
+            android:src="@drawable/map" />
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/TVWhiteMedium2"
+        android:id="@+id/btn_tambah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/_16ssp"
+        android:elevation="@dimen/_2ssp"
+        android:background="@drawable/btn_gradient"
+        android:backgroundTint="@color/red"
+        android:padding="@dimen/_8ssp"
+        android:gravity="center"
+        android:text="@string/tambah_sekarang" />
+</RelativeLayout>

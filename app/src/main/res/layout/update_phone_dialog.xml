@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_16sdp"
+    card_view:cardBackgroundColor="@color/white"
+    card_view:cardCornerRadius="@dimen/_16sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/_8sdp">
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/TVERedBold1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            android:text="@string/ubah_seluler_title"
+            android:drawablePadding="@dimen/_8ssp"
+            card_view:drawableStartCompat="@drawable/icon_warning" />
+
+        <TextView
+            android:id="@+id/message"
+            style="@style/TVG90Medium1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            android:text="@string/ubah_seluler_desc"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/no_btn"
+                style="@style/TVERedMedium1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_8sdp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                android:text="@string/cancel"/>
+
+            <Button
+                android:id="@+id/yes_btn"
+                style="@style/TVERedMedium1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_8sdp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/E90"
+                android:text="@string/lanjutkan"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

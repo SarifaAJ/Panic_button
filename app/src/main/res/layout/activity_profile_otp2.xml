@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/_16ssp"
+    tools:context=".ui.profilefragment.ProfileOTP2Activity">
+
+    <ImageView
+        android:id="@+id/daftar_image"
+        android:layout_width="@dimen/_194sdp"
+        android:layout_height="@dimen/_194sdp"
+        android:adjustViewBounds="true"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/otp_2" />
+
+    <TextView
+        style="@style/TVBlackBold3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16ssp"
+        android:gravity="center_horizontal"
+        android:text="@string/otp3"/>
+
+    <TextView
+        style="@style/TVG90Medium1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16ssp"
+        android:gravity="center"
+        android:text="@string/otp3_konfirmasi" />
+
+    <TextView
+        android:id="@+id/btn_kirim"
+        style="@style/TVWhiteMedium3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_48ssp"
+        android:elevation="@dimen/_2ssp"
+        android:background="@drawable/rectangle2"
+        android:backgroundTint="@color/red"
+        android:padding="@dimen/_8ssp"
+        android:gravity="center"
+        android:text="@string/otp2_btn"
+        android:textAllCaps="false" />
+
+</LinearLayout>

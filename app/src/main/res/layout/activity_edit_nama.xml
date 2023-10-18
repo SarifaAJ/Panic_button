@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".ui.profilefragment.EditNamaActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:elevation="@dimen/_12ssp"
+        android:background="@color/white"
+        android:padding="@dimen/_16ssp">
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="@dimen/_24ssp"
+            android:layout_height="@dimen/_24ssp"
+            android:layout_marginStart="@dimen/_8ssp"
+            android:layout_marginEnd="@dimen/_16ssp"
+            android:padding="@dimen/_4ssp"
+            android:background="@drawable/btn_white"
+            android:backgroundTint="@color/G30"
+            android:src="@drawable/icon_arrow_back"
+            android:adjustViewBounds="true"/>
+
+        <TextView
+            android:id="@+id/ubah_nama"
+            style="@style/TVBlackBold2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ubah_nama" />
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_16ssp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_nama"
+            style="@style/TVG90Medium1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/_16ssp"
+            android:paddingEnd="@dimen/_16ssp"
+            android:paddingTop="@dimen/_8ssp"
+            android:paddingBottom="@dimen/_8ssp"
+            android:hint="@string/nama_baru"
+            android:textColorHint="@color/G60"
+            android:drawableStart="@drawable/icon_person"
+            android:drawablePadding="@dimen/_8ssp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/btn_save"
+        style="@style/TVWhiteMedium3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_16ssp"
+        android:elevation="@dimen/_2ssp"
+        android:background="@drawable/rectangle2"
+        android:backgroundTint="@color/red"
+        android:padding="@dimen/_8ssp"
+        android:gravity="center"
+        android:text="@string/simpan"/>
+
+</LinearLayout>
